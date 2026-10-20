@@ -93,11 +93,26 @@ This copies everything: your admin and test accounts, feature flags, call countr
 
 Use this if Lovable won't give you a connection string. You only have test accounts, so you lose nothing that matters.
 
-1. In Supabase → **Database → Extensions**, enable `vector`, `pg_cron` and `pg_net`.
-2. Run every file in `supabase/migrations/` in filename order, then every file in `drizzle/migrations/` in number order. Paste each into the SQL Editor, or use `psql -f`.
-3. Ask Lovable: *"List any database functions, tables or seed data that exist in the live database but are not in `supabase/migrations` or `drizzle/migrations`, and give me the SQL."* One known example: the code calls a `verify_cron_token` function that isn't in the migration files. Run whatever SQL Lovable gives you.
-4. Re-enter your settings in the new app's Admin area: call countries, feature flags and anything else you'd changed.
-5. Sign up again and make your account an admin. Check the `user_roles` table and the migrations for how the admin role is stored.
+All the migrations are already combined, in the right order, into two files.
+
+1. Open Supabase → **SQL Editor → New query**.
+2. Paste the whole of `supabase/self-host/schema-part-1.sql` and click **Run**. Wait for "Success".
+3. Paste the whole of `supabase/self-host/schema-part-2.sql` and click **Run**.
+
+Each part runs as one transaction, so if anything fails, nothing in that part is applied. Send the error to Claude and re-run that part after fixing it.
+
+These files were test-run on a stand-in database. They created all **116 tables** listed in the live app's own schema file, plus all the database functions the app relies on (spend reservations, cron token check, admin role check and knowledge search), with row-level security on every table. The one migration that granted admin to your **old** Lovable account ID is skipped, because that ID doesn't exist on the new project.
+
+4. After you deploy (step 6), **sign up** on the new site, then make yourself admin in the SQL Editor:
+   ```sql
+   insert into public.user_roles (user_id, role)
+   select id, 'admin' from auth.users where email = 'richard@plexecute.io'
+   on conflict do nothing;
+   ```
+   Sign out and back in to see the full control panel.
+5. Redo the settings you'd changed in the old control panel, such as call countries (switch **UK** back on) and any feature switches.
+
+To regenerate the two files after adding new migrations, run `python3 scripts/self-host/build-schema.py`.
 
 ## Step 4: Supabase sign-in settings
 
