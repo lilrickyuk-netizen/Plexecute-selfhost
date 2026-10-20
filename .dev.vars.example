@@ -1,0 +1,40 @@
+# Local development secrets for `npm run dev` (Cloudflare reads .dev.vars). Copy to .dev.vars.
+# .dev.vars is git-ignored. Never commit real values.
+# Production values go into Cloudflare with `npx wrangler secret put NAME` (see MIGRATION.md).
+
+APP_BASE_URL=http://localhost:3000
+
+# Supabase (new project → Settings → API)
+SUPABASE_URL=
+SUPABASE_PUBLISHABLE_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+
+# AI (your own provider accounts)
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+GEMINI_LIVE_API_KEY=
+FIRECRAWL_API_KEY=
+# GOOGLE_MAPS_API_KEY=   (only when Journeys launches)
+USDA_FDC_API_KEY=
+
+# Generated secrets: make each with `openssl rand -hex 32`
+CRON_SECRET=
+CALENDAR_STATE_SECRET=
+WEARABLE_STATE_SECRET=
+VOICE_STREAM_SECRET=
+PHONE_ENCRYPTION_KEY=
+VAPID_SEED=
+VAPID_CONTACT=mailto:support@plexecute.io
+
+# Stripe (use TEST keys locally)
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+# Twilio, email
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_FROM_NUMBER=
+TWILIO_VERIFY_SERVICE_SID=
+RESEND_API_KEY=
+EMAIL_FROM=Plexecute <noreply@plexecute.io>
+SUPPORT_EMAIL=support@plexecute.io

@@ -1,0 +1,2 @@
+ALTER TABLE public.goals ADD COLUMN IF NOT EXISTS preferred_days smallint[] NULL, ADD COLUMN IF NOT EXISTS preferred_start time NULL;
+ALTER TABLE public.goals ADD CONSTRAINT goals_preferred_days_valid CHECK (preferred_days IS NULL OR (preferred_days <@ ARRAY[1,2,3,4,5,6,7]::smallint[] AND cardinality(preferred_days) BETWEEN 1 AND 7));

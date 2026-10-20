@@ -1,0 +1,1 @@
+CREATE POLICY "No member access to calendar credentials" ON public.calendar_credentials FOR ALL TO authenticated USING (false) WITH CHECK (false);

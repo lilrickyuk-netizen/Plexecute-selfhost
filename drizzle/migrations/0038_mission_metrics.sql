@@ -1,0 +1,2 @@
+ALTER TABLE public.goal_missions ADD COLUMN IF NOT EXISTS metrics jsonb NOT NULL DEFAULT '{}'::jsonb;
+COMMENT ON COLUMN public.goal_missions.metrics IS 'Execution evidence rolled up from queue task outcomes: totals per metric label, per-task ledger (idempotent) and which entries reached the linked goal.';

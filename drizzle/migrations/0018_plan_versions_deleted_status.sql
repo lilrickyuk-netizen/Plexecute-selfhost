@@ -1,0 +1,2 @@
+ALTER TABLE public.plan_versions DROP CONSTRAINT plan_versions_status_check;
+ALTER TABLE public.plan_versions ADD CONSTRAINT plan_versions_status_check CHECK (status = ANY (ARRAY['proposed','approved','rejected','superseded','deleted']));

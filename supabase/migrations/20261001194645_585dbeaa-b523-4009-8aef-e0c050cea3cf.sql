@@ -1,0 +1,2 @@
+ALTER TABLE public.life_twin_facts DROP CONSTRAINT life_twin_facts_domain_check;
+ALTER TABLE public.life_twin_facts ADD CONSTRAINT life_twin_facts_domain_check CHECK (domain IN ('identity','work','care','sleep','health','training','nutrition','learning','finance','relationships','other','behaviour','schedule','accountability','integrations','wellness','career','body','activity'));

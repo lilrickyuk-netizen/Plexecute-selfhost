@@ -1,0 +1,1 @@
+ALTER TABLE public.life_twin_facts DROP CONSTRAINT life_twin_facts_source_check;

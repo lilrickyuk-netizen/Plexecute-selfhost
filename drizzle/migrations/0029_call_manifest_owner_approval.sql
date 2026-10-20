@@ -1,0 +1,2 @@
+ALTER TABLE public.call_market_manifest DROP CONSTRAINT call_market_manifest_check;
+ALTER TABLE public.call_market_manifest ADD CONSTRAINT call_market_manifest_check CHECK ((NOT enabled) OR (signed_off_by IS NOT NULL AND signed_off_at IS NOT NULL AND consent_version IS NOT NULL AND disclosure_version IS NOT NULL AND permitted_start IS NOT NULL AND permitted_end IS NOT NULL));

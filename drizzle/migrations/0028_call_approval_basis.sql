@@ -1,0 +1,2 @@
+ALTER TABLE public.call_market_manifest ADD COLUMN IF NOT EXISTS approval_basis text NOT NULL DEFAULT 'not_reviewed';
+UPDATE public.call_market_manifest SET approval_basis = CASE WHEN review_ref IS NOT NULL AND signed_off_by IS NOT NULL THEN 'externally_reviewed' WHEN signed_off_by IS NOT NULL THEN 'owner_self_approval' ELSE 'not_reviewed' END;

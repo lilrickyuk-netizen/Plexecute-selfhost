@@ -1,0 +1,126 @@
+{
+  "status": "AWAITING_COUNSEL",
+  "note": "V3 \u00a778.1. Recipients mirror SUBPROCESSORS in src/lib/legal.ts. No provider is assumed adequate; each entry needs a confirmed safeguard before public launch.",
+  "recipients": [
+    {
+      "recipient": "Lovable (hosting/database/AI routing)",
+      "country": "TO_CONFIRM",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "OpenAI",
+      "country": "US",
+      "role": "subprocessor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Google (Gemini models)",
+      "country": "US",
+      "role": "subprocessor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Twilio",
+      "country": "US",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Stripe",
+      "country": "US/IE",
+      "role": "independent controller for payments; processor otherwise",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Resend",
+      "country": "US",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Expo",
+      "country": "US",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Firecrawl",
+      "country": "US",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "FatSecret",
+      "country": "US",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    },
+    {
+      "recipient": "Sentry",
+      "country": "US/EU",
+      "role": "processor",
+      "uk_extension_dpf": "TO_CONFIRM",
+      "safeguard": "AWAITING_COUNSEL (IDTA/Addendum/SCC or DPF certification to be confirmed)",
+      "transfer_risk_assessment": "NOT_STARTED",
+      "special_category_safeguards": "TO_CONFIRM",
+      "subprocessor_chain": "TO_CONFIRM",
+      "contract_version": null,
+      "review_date": null
+    }
+  ]
+}

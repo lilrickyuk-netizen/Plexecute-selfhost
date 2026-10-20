@@ -1,0 +1,2 @@
+ALTER TABLE public.plan_block_events DROP CONSTRAINT plan_block_events_event_type_check;
+ALTER TABLE public.plan_block_events ADD CONSTRAINT plan_block_events_event_type_check CHECK (event_type IN ('acknowledged','started','snoozed','partial','blocked','rescheduled','skipped','completed','safety_stopped','restored','cancelled','expired','acknowledge','start','complete','skip','safety_stop','snooze','restore','cancel','contact','advance','expire'));

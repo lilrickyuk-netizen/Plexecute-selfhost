@@ -1,0 +1,2 @@
+UPDATE public.profiles SET coaching_style = 'direct' WHERE coaching_style NOT IN ('supportive','direct','disciplined','calm','competitive');
+ALTER TABLE public.profiles ADD CONSTRAINT profiles_coaching_style_check CHECK (coaching_style IN ('supportive','direct','disciplined','calm','competitive'));

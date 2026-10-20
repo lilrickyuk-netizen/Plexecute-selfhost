@@ -1,0 +1,2 @@
+ALTER TABLE public.scheduled_calls DROP CONSTRAINT IF EXISTS scheduled_calls_commitment_id_fkey;
+ALTER TABLE public.scheduled_calls ADD CONSTRAINT scheduled_calls_commitment_id_fkey FOREIGN KEY (commitment_id) REFERENCES public.commitments(id) ON DELETE SET NULL;

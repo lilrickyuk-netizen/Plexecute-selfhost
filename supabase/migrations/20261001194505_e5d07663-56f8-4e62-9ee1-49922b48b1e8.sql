@@ -1,0 +1,2 @@
+ALTER TABLE public.life_twin_facts ADD COLUMN source_ref text, ADD COLUMN observed_at timestamptz NOT NULL DEFAULT now();
+ALTER TABLE public.life_twin_facts ADD CONSTRAINT life_twin_facts_source_chk CHECK (source IN ('USER_ASSERTED','OBSERVED','DERIVED','AI_INFERRED'));

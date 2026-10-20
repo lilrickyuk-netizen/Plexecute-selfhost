@@ -1,0 +1,307 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791512776178,
+      "tag": "0000_free_tier_goal_limit",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791512912046,
+      "tag": "0001_free_ai_budget",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791545795624,
+      "tag": "0002_add_user_id_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791550350626,
+      "tag": "0003_usage_events",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791550512391,
+      "tag": "0004_usage_summary",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791557400085,
+      "tag": "0005_admin_full_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791559131468,
+      "tag": "0006_privacy_audit_consent_purposes",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791651936524,
+      "tag": "0007_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791652643885,
+      "tag": "0008_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791652714362,
+      "tag": "0009_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791653083592,
+      "tag": "0010_owner_cohorts_metrics",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1791653902929,
+      "tag": "0011_fix_cohort_done_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1791670458884,
+      "tag": "0012_create_learning_searches",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1791737439758,
+      "tag": "0013_coach_scheduled_calls",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1791739121308,
+      "tag": "0014_coach_pending_actions",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1791739896159,
+      "tag": "0015_scheduled_calls_keep_history",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1791787571405,
+      "tag": "0016_billing_country",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1791790436122,
+      "tag": "0017_member_deletion",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1791790890314,
+      "tag": "0018_plan_versions_deleted_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1791798406238,
+      "tag": "0019_meal_photo_estimates",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1791803121647,
+      "tag": "0020_guided_wellness_videos",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1791805972922,
+      "tag": "0021_exercise_demo_cache",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1791807691833,
+      "tag": "0022_meal_prep_inventory",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1791842715863,
+      "tag": "0023_appointments_and_spend",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1791848044853,
+      "tag": "0024_journey_planning",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1791884604205,
+      "tag": "0025_universal_goal_pathway",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1791890733081,
+      "tag": "0026_booking_reservations_checkout",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1791902160844,
+      "tag": "0027_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1791998558430,
+      "tag": "0028_call_approval_basis",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1791999066878,
+      "tag": "0029_call_manifest_owner_approval",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1792012748537,
+      "tag": "0030_cancel_calls_when_commitment_off",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1792015958845,
+      "tag": "0031_cron_token_verify",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1792094480400,
+      "tag": "0032_goal_preferred_days_start",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1792096792582,
+      "tag": "0033_coach_standing_orders",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1792098447618,
+      "tag": "0034_goal_missions",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1792143918205,
+      "tag": "0035_allow_erasure_plan_versions",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1792145373352,
+      "tag": "0036_harden_reserve_ai_budget",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1792145391460,
+      "tag": "0037_reserve_ai_budget_allow_server_settle",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1792150896668,
+      "tag": "0038_mission_metrics",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1792180110304,
+      "tag": "0039_web_push_and_prompt_prefs",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1792231499122,
+      "tag": "0040_atomic_usage_reservations",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1792231748608,
+      "tag": "0041_reserved_call_cost_settlement",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "7",
+      "when": 1792320093154,
+      "tag": "0042_pro_calls_shared_allowance_only",
+      "breakpoints": true
+    }
+  ]
+}

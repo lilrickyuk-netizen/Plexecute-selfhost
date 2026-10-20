@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plexecute",
+  "compatibility_date": "2025-09-02",
+  // nodejs_compat: node:crypto etc. From this compatibility date it also fills process.env
+  // from the Worker's variables and secrets, which the server code reads.
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./src/server.ts",
+  "observability": { "enabled": true },
+  // Custom domain is attached in the Cloudflare dashboard (Workers → plexecute → Domains).
+  "vars": {
+    "APP_ENV": "production"
+  }
+}

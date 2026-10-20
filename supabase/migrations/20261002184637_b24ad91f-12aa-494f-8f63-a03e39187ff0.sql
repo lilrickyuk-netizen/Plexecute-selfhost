@@ -1,0 +1,1 @@
+ALTER TABLE public.plan_versions ADD COLUMN IF NOT EXISTS engine_versions jsonb NOT NULL DEFAULT '{}'::jsonb;

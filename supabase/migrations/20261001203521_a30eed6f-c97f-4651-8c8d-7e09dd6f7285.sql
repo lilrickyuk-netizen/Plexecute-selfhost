@@ -1,0 +1,2 @@
+UPDATE public.plan_blocks SET occurrence_kind = CASE domain WHEN 'career' THEN 'work_task' WHEN 'work_prep' THEN 'meeting_prep' WHEN 'sleep' THEN 'recovery_action' WHEN 'admin' THEN 'personal_task' ELSE 'other' END
+WHERE source_type IN ('goal','manual','makeup') AND occurrence_kind = 'personal_task' AND domain IN ('career','work_prep','sleep','other');
