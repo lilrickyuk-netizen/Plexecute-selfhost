@@ -154,7 +154,7 @@ npx wrangler secret put NAME
 SUPABASE_URL  SUPABASE_PUBLISHABLE_KEY  SUPABASE_SERVICE_ROLE_KEY
 APP_BASE_URL                      (workers.dev URL while testing, then https://plexecute.io)
 OPENAI_API_KEY  GEMINI_API_KEY  GEMINI_LIVE_API_KEY  FIRECRAWL_API_KEY  USDA_FDC_API_KEY
-CRON_SECRET  CALENDAR_STATE_SECRET  WEARABLE_STATE_SECRET  VOICE_STREAM_SECRET  PHONE_ENCRYPTION_KEY  VAPID_SEED  VAPID_CONTACT
+CRON_SECRET  VOICE_STREAM_SECRET  PHONE_ENCRYPTION_KEY  VAPID_SEED  VAPID_CONTACT
 STRIPE_SECRET_KEY  STRIPE_WEBHOOK_SECRET
 STRIPE_PRICE_PRO  STRIPE_PRICE_PRO_ANNUAL  STRIPE_PRICE_EXECUTE  STRIPE_PRICE_EXECUTE_ANNUAL
 STRIPE_PRICE_VOICE_TOPUP  STRIPE_PRICE_AI_CREDIT
@@ -164,9 +164,9 @@ TWILIO_ACCOUNT_SID  TWILIO_AUTH_TOKEN  TWILIO_FROM_NUMBER  TWILIO_VERIFY_SERVICE
 RESEND_API_KEY  EMAIL_FROM  SUPPORT_EMAIL
 ```
 
-Copy the Stripe, Twilio and Resend values exactly as they are in Lovable today. Make each generated secret (`CRON_SECRET`, `CALENDAR_STATE_SECRET` and so on) with `openssl rand -hex 32`, unless Route A means you must reuse an old value.
+Copy the Stripe, Twilio and Resend values exactly as they are in Lovable today. Make each generated secret (`CRON_SECRET`, `VOICE_STREAM_SECRET` and so on) with `openssl rand -hex 32`, unless Route A means you must reuse an old value.
 
-**Optional:** `GOOGLE_MAPS_API_KEY`, needed only when you launch Journeys, and any other variables you use today, such as `GEMINI_LIVE_MODEL`, `ELEVENLABS_*`, `SENTRY_DSN` and `POSTHOG_KEY`. The full list with descriptions is in `src/lib/credentials.ts`.
+**Optional, for future upgrades:** `GOOGLE_MAPS_API_KEY` (Journeys), `CALENDAR_STATE_SECRET` plus the Google/Outlook calendar keys (calendar sync), and `WEARABLE_STATE_SECRET` plus the wearable keys (wearables). Add them only when you switch those features on. Also optional: any other variables you use today, such as `GEMINI_LIVE_MODEL`, `ELEVENLABS_*`, `SENTRY_DSN` and `POSTHOG_KEY`. The full list with descriptions is in `src/lib/credentials.ts`.
 
 For local development, copy `.dev.vars.example` to `.dev.vars` and fill it in. Use **Stripe test keys** there.
 

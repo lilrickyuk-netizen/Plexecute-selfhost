@@ -19,8 +19,8 @@ USDA_FDC_API_KEY=
 
 # Generated secrets: make each with `openssl rand -hex 32`
 CRON_SECRET=
-CALENDAR_STATE_SECRET=
-WEARABLE_STATE_SECRET=
+# CALENDAR_STATE_SECRET=   (only when calendar sync launches)
+# WEARABLE_STATE_SECRET=   (only when wearables launch)
 VOICE_STREAM_SECRET=
 PHONE_ENCRYPTION_KEY=
 VAPID_SEED=
